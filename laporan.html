@@ -1,0 +1,42 @@
+<?php 
+	session_start();
+	if(!isset($_SESSION['username'])){
+		header("Location: login.php");
+	}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Laporan Pegawai</title>
+</head>
+<style type="text/css">
+	body{
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: darkblue;
+	}
+	.navigation {
+		overflow: hidden;
+		background-color: blue;
+	}
+	.navigation a{
+		float: right;
+		font-size: 16px;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+	.navigation a:hover{
+		background-color: darkblue;
+	}
+</style>
+<body>
+	<div class="navigation">
+		<a href="globalPage.php"><b>LOGOUT</b></a>
+		<a href="about-admin.php"><b>PROFILE</b></a>
+		<a href="laporan.php"><b>LAPORAN</b></a>
+		<a href="add_edit.php"><b>ADD PEGAWAI</b></a>
+	</div>
+</body>
+</html>

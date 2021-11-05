@@ -1,0 +1,27 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+td {
+	font-size: 14px;
+}
+#kolom{
+	width: 300px;
+	height: 25px;
+}
+td
+{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.div1{
+	float: left;
+	width: 40%;
+	background-color: grey;
+	width: 100px;
+}
+.div2{
+	float: right;
+	width: 60%;
+	background-color: yellow;
+	width: 100px;
+}
